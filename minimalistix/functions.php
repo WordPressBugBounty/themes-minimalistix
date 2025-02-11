@@ -75,68 +75,50 @@ add_action('enqueue_block_assets', 'minimalistix_pattern_styles');
 
 
 
+
+
+
+
+
 // Initialize information content
 require_once trailingslashit(get_template_directory()) . 'inc/vendor/autoload.php';
 
 use SuperbThemesThemeInformationContent\ThemeEntryPoint;
 
 ThemeEntryPoint::init([
-	"templates" => [
-		array(
-			'name' => __("Front Page", "minimalistix"),
-			'frontpage' => true,
-			'required' => true,
-			'image' => 'front-page.png',
-		),
-		array(
-			'name' => __("About", "minimalistix"),
-			'required' => false,
-			'slug' => 'about',
-			'image' => 'about.png',
-		),
-		array(
-			'name' => __("Contact", "minimalistix"),
-			'required' => false,
-			'slug' => 'contact',
-			'image' => 'contact.png',
-		),
-		array(
-			'name' => __("Blog", "minimalistix"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'blog.png',
-		),
-		array(
-			'name' => __("Page", "minimalistix"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'pages.png',
-		),
-		array(
-			'name' => __("Post", "minimalistix"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'posts.png',
-		),
-		array(
-			'name' => __("Archives", "minimalistix"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'archives.png',
-		),
-		array(
-			'name' => __("Search", "minimalistix"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'search.png',
-		),
-		array(
-			'name' => __("404", "minimalistix"),
-			'template_only' => true,
-			'required' => true,
-			'image' => '404.png',
-		),
-	],
-	'theme_url' => 'https://superbthemes.com/minimalistix/',
-	'demo_url' => 'https://superbthemes.com/demo/minimalistix/'
+    'type' => 'block', // block / classic
+    'theme_url' => 'https://superbthemes.com/minimalistix/',
+    'demo_url' => 'https://superbthemes.com/demo/minimalistix/',
+    'features' => array(
+    	array(
+    		'title' => __("Theme Designer", "minimalistix"),
+    		'icon' => "lego-duotone.webp",
+    		'description' => __("Choose from over 300 designs for footers, headers, landing pages & all other theme parts.", "minimalistix")
+    	),
+    	   	array(
+    		'title' => __("Editor Enhancements", "minimalistix"),
+    		'icon' => "1-1.png",
+    		'description' => __("Enhanced editor experience, grid systems, improved block control and much more.", "minimalistix")
+    	),
+    	array(
+    		'title' => __("Custom CSS", "minimalistix"),
+    		'icon' => "2-1.png",
+    		'description' => __("Add custom CSS with syntax highlight, custom display settings, and minified output.", "minimalistix")
+    	),
+    	array(
+    		'title' => __("Animations", "minimalistix"),
+    		'icon' => "wave-triangle-duotone.webp",
+    		'description' => __("Animate any element on your website with one click. Choose from over 50+ animations.", "minimalistix")
+    	),
+    	array(
+    		'title' => __("WooCommerce Integration", "minimalistix"),
+    		'icon' => "shopping-cart-duotone.webp",
+    		'description' => __("Choose from over 100 unique WooCommerce designs for your e-commerce store.", "minimalistix")
+    	),
+    	array(
+    		'title' => __("Responsive Controls", "minimalistix"),
+    		'icon' => "arrows-out-line-horizontal-duotone.webp",
+    		'description' => __("Make any theme mobile-friendly with SuperbThemes responsive controls.", "minimalistix")
+    	)
+    )
 ]);
