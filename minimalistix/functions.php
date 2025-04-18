@@ -45,10 +45,7 @@ function new_excerpt_more($more){
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-register_block_pattern_category(
-	'minimalistix',
-	array( 'label' => __( 'Minimalistix', 'minimalistix' ) )
-);
+
 
 add_action('init', function() {
 	remove_theme_support('core-block-patterns');
@@ -84,7 +81,13 @@ add_action('enqueue_block_assets', 'minimalistix_pattern_styles');
 require_once trailingslashit(get_template_directory()) . 'inc/vendor/autoload.php';
 
 use SuperbThemesThemeInformationContent\ThemeEntryPoint;
+add_action("init", function () {
+register_block_pattern_category(
+	'minimalistix',
+	array( 'label' => __( 'Minimalistix', 'minimalistix' ) )
+);
 
+	
 ThemeEntryPoint::init([
     'type' => 'block', // block / classic
     'theme_url' => 'https://superbthemes.com/minimalistix/',
@@ -122,3 +125,4 @@ ThemeEntryPoint::init([
     	)
     )
 ]);
+});
