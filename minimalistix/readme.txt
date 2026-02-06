@@ -1,10 +1,10 @@
 # Minimalistix
 
 Contributors: superbaddons  
-Tested up to: 6.3
+Tested up to: 6.9
 Requires PHP: 4.0
-Stable tag: 2.8
-Version: 2.8
+Stable tag: 3.9
+Version: 3.9
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 Tags: blog, entertainment, news, one-column, two-columns, block-patterns, block-styles, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-image-header, featured-images, footer-widgets, full-site-editing, full-width-template, sticky-post, style-variations, template-editing, threaded-comments, translation-ready, wide-blocks
@@ -18,7 +18,7 @@ Introducing Minimalistix, an elegant FSE (Full Site Editing) Gutenberg Block Wor
 
 ## Copyright
 
-Minimalistix WordPress Theme, Copyright superbaddons 2023 
+Minimalistix WordPress Theme, Copyright superbaddons 2026
 Minimalistix is distributed under the terms of the GNU GPL
 All files coded by me is under GPLv2 http://www.gnu.org/licenses/gpl-2.0.html
 
